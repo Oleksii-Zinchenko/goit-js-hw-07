@@ -1,0 +1,25 @@
+/* Стили для каждого элемента списка */
+.item {
+  border-radius: 8px; 
+  padding: 16px;
+  width: 392px; 
+  height: 264px; 
+  background-color: #f6f6fe; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 16px; 
+}
+
+.title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 133%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.subcategory-item {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
