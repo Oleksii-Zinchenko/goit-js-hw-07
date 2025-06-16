@@ -1,25 +1,61 @@
 /* Стили для каждого элемента списка */
-.item {
-  border-radius: 8px; 
-  padding: 16px;
-  width: 392px; 
-  height: 264px; 
-  background-color: #f6f6fe; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  margin-bottom: 16px; 
+
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.title {
+#categories {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.item {
+  background-color: #f6f6fe;
+  border-radius: 8px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+h2 {
+  font-family: Montserrat;
   font-weight: 600;
   font-size: 24px;
-  line-height: 133%;
-  letter-spacing: 0.04em;
+  line-height: 32px;
+  letter-spacing: 0.64px;
   color: #2e2f42;
+  margin: 0;
 }
 
-.subcategory-item {
-  border: 1px solid #808080;
-  border-radius: 4px;
+.item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item ul li {
   width: 360px;
   height: 40px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  background-color: #f6f6fe;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2e2f42;
+  line-height: 24px;
+  letter-spacing: 0.64px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
 }
