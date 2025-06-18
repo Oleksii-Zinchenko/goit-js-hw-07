@@ -53,3 +53,4 @@ const galleryMarkup = images
   .join('');
 
 galleryList.insertAdjacentHTML('beforeend', galleryMarkup);
+git;
