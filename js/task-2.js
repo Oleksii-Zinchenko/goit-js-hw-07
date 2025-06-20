@@ -42,8 +42,15 @@ const galleryMarkup = images
   .map(
     ({ url, alt, width, height }) =>
       `<li class="gallery-item">
-      <img class="gallery-img" src="${url}" alt="${alt}" width="${width}" height="${height}">
-    </li>`
+        <img 
+          class="gallery-img" 
+          src="${url}" 
+          alt="${alt}" 
+          width="${width}" 
+          height="${height}" 
+          loading="lazy"
+        />
+      </li>`
   )
   .join('');
 
