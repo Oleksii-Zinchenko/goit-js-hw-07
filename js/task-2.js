@@ -36,21 +36,15 @@ const images = [
     alt: 'Lighthouse Coast Sea',
   },
 ];
-
-const container = document.createElement('div');
-container.classList.add('gallery-container');
-document.body.prepend(container);
-
-const galleryList = document.createElement('ul');
-galleryList.classList.add('gallery', 'js-gallery');
-container.appendChild(galleryList);
+const gallery = document.querySelector('.gallery');
 
 const galleryMarkup = images
   .map(
     ({ url, alt, width, height }) =>
-      `<li class="gallery-item"><img class="gallery-img" src="${url}" alt="${alt}" width="${width}" height="${height}" /></li>`
+      `<li class="gallery-item">
+      <img class="gallery-img" src="${url}" alt="${alt}" width="${width}" height="${height}">
+    </li>`
   )
   .join('');
 
-galleryList.insertAdjacentHTML('beforeend', galleryMarkup);
-git;
+gallery.insertAdjacentHTML('beforeend', galleryMarkup);
