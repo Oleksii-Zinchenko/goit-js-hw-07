@@ -1,6 +1,6 @@
-const button = document.querySelector('.change-color');
-const colorSpan = document.querySelector('.color');
-const widget = document.querySelector('.widget');
+const button = document.querySelector(".change-color");
+const colorSpan = document.querySelector(".color");
+const widget = document.querySelector(".widget");
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
@@ -8,7 +8,7 @@ function getRandomHexColor() {
     .padStart(6, 0)}`;
 }
 
-button.addEventListener('click', event => {
+button.addEventListener("click", (event) => {
   const newColor = getRandomHexColor();
   document.body.style.backgroundColor = newColor;
   colorSpan.textContent = newColor;
