@@ -29,14 +29,14 @@ const gallery = document.querySelector(".gallery");
 
 const galleryMarkup = images
   .map(
-    ({ url, alt, width, height }) =>
+    ({ url, alt }) =>
       `<li class="gallery-item">
           <img
             class="gallery-img"
             src="${url}"
             alt="${alt}"
-            width="${width}"
-            height="${height}"
+            width="360"
+            height="300"
             loading="lazy"
           />
         </li>`
